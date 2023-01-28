@@ -2,7 +2,9 @@
   --color-lightgray: #d3d3d3;
   --color-darkslategray: #696969;
   --color-DarkSeaGreen: #8fbc8f;
+  --color-MediumAquaMarine: #66cdaa;
   --color-LightCoral: #f08080;
+  --color-LightPink: #ffb6c1;
 }
 
 body {
@@ -20,8 +22,6 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -44,18 +44,15 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: var(--color-lightgray);
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background: var(--color-LightPink);
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: var(--color-MediumAquaMarine);
 }
 
 .saveBtn {
