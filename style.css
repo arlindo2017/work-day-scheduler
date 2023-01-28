@@ -1,6 +1,19 @@
+:root {
+  --color-lightgray: #d3d3d3;
+  --color-darkslategray: #696969;
+  --color-DarkSeaGreen: #8fbc8f;
+  --color-LightCoral: #f08080;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  background-color: var(--color-lightgray);
+}
+
+header {
+  background-color: var(--color-darkslategray);
+  color: #ffffff;
 }
 
 textarea {
@@ -25,8 +38,8 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--color-darkslategray);
+  color: white;
   border-top: 1px dashed #000000;
 }
 
@@ -46,20 +59,24 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #4682b4;
-  padding: 1px;
-  font-size: 30px;
+  background-color: var(--color-darkslategray);
+  font-size: 25px;
   color: white;
+}
+
+.deleteBtn {
+  font-size: 25px;
+  color: var(--color-darkslategray);
 }
 
 .saveBtn i:hover {
-  font-size: 32px;
-  transition: all 0.3s ease-in-out;
+  font-size: 26px;
+  color: var(--color-DarkSeaGreen);
 }
 
-.bi-box-arrow-down {
-  color: white;
+.deleteBtn i:hover {
+  font-size: 26px;
+  color: var(--color-LightCoral);
 }
