@@ -1,6 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
 $(function () {
   // Save button function to store entry to local storage when user clicks save button
   $('.saveBtn').click(function() {
@@ -49,7 +46,6 @@ $(function () {
       $(this).addClass("present");
     }
   });
-  
   
   // TODO: Add code to get any user input that was saved in localStorage and set
   $('#hour-9 .description').val(localStorage.getItem('hour-9'));
